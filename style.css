@@ -814,15 +814,20 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+    align-items: center;
   }
 
   .sobre-image {
-    flex: 1;
+    flex: 0 0 auto;
     max-width: 100%;
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
   }
 
   .sobre-container p {
     min-width: 0;
+    width: 100%;
   }
 
   .carousel-slide {
@@ -951,6 +956,10 @@ footer {
   .indicator.active {
     width: 12px;
     height: 12px;
+  }
+
+  .sobre-image {
+    max-height: 300px;
   }
 
   .infinite-carousel {
